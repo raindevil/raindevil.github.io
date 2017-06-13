@@ -5,17 +5,30 @@
     <meta charset="utf-8">
     <style>
       a {
-          color: red;
+          color: blue;
       }
-      div {
-        border: 1px solid black;
-    }
+      #exec-bio {
+          background-color: lightgray;
+      }
+      #any-name {
+          background-color: orange;
+      }
+      .this-class {
+          background-color: azure;
+      }
+      .bio-box {
+          border: 1px solid black;
+      }
+      .bio-box a {
+          color: green;
+      }
+
     </style>
   </head>
   <body>
     <h1>I'm an h1</h1>
     <ul>
-      <li>
+      <li id="any-name">
         <a href="http://example.com/">Link</a>
       </li>
       <li>
@@ -26,17 +39,17 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div>
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div id="exec-bio" class="bio-box">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box this-class">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box this-class">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bio-box this-class">
+      <a href="http://example.com/">I'm a link</a>
     </div>
   </body>
 </html>
